@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>taste of art_resized</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!-- Save for Web Slices (taste of art_resized.psd) -->
+<div id="body">
+  <table border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+    <tr>
+      <td><div id="site_name"><div class="site_name"><a href="index.html">LIGA URJC</a></div></div></td>
+	    <td><div id="ffl"></div></td>
+	    <td colspan="2"><div class="top-nav">
+        <ul>
+        <li><a href="ligas.html">LIGAS</a></li>
+        <li><a href="clubs.html">CLUBS</a></li>
+        <li><a href="calendario.html">CALENDARIO</a></li>
+        <li><a href="noticias.html">NOTICIAS</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+        </div></td>
+	  </tr>
+    <tr>
+      <td colspan="3"><div id="header-left"><div class="slogan">CLUBS <br/>
+     </div>
+     <div class="slogan-info"> Aqui encontraras el listado de clubs, asi como toda la informacion relacionada con ellos.</div>
+</div>
+		</td>
+	    <td><div id="header-right">
+	      <div class="image1">
+	       <img src="images/comment.png" alt="image1" width="58" height="51" /><a href="listado_clubs.html">LISTADO DE CLUBS</a><br />
+	        
+	       <br /><img src="images/comment.png" alt="image1" width="58" height="51" />
+	      CONTACTO CON UN CLUB 
+          <br /><br /><img src="images/comment.png" alt="image1" width="58" height="51" /><a href="edicion_clubs.html">EDICION DE CLUBS</a>   </div>
+	    </div></td>
+	  </tr>
+    <tr>
+      <td colspan="4"><div id="content"><div  class="title">LISTADO DE CLUBS</div>
+      <form action="url_accionar_listado_clubs">
+      	<input type='text' name='nombre_club' value='Nombre'></input> <p>  </p>
+      	<input type='checkbox' name='asc'>Orden ascendente</input>
+      	<input type='checkbox' name='detallado'>Detallado</input> 
+      	<input type='submit' value='Enviar'></input></br> 
+      </form></br>
+      <ul>
+      <li> <p>Id   Nombre club</p></li>
+      {{#lista}}
+      	<li> {{id}} {{nombre}} <ul>{{#jugadores}} <li>{{id}} {{nombre}} </li>{{/jugadores}}</ul></li>
+      {{/lista}}
+      </ul></div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4"><div id="footer">
+        <div align="center" class="footer">COPYRIGHT (C) 2010 &quot;YOUR SITE&quot;. DESIGN BY <a href="http://barokstoelen.com/webshop.html?page=shop.browse&amp;category_id=6" title="kinderstoelen">Kinderstoelen</a></div>
+      </div></td>
+	  </tr>
+    <tr>
+      <td>
+        <img src="images/spacer.gif" width="321" height="1" alt="" /></td>
+	    <td>
+		    <img src="images/spacer.gif" width="66" height="1" alt="" /></td>
+	    <td>
+		    <img src="images/spacer.gif" width="77" height="1" alt="" /></td>
+	    <td>
+		    <img src="images/spacer.gif" width="549" height="1" alt="" /></td>
+	  </tr>
+  </table>
+</div>
+<div class="style2"><a href="http://barokstoelen.com/webshop.html?page=shop.browse&amp;category_id=6" title="Kinderstoelen">Kinderstoelen</a></div>
+<!-- End Save for Web Slices -->
+<div style="text-align: center; font-size: 0.75em;">Diseño descargado desde <a href="http://www.misplantillas.com/">plantillas web gratis</a>.</div></body>
+</html>
