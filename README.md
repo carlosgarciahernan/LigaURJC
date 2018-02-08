@@ -24,7 +24,7 @@ Esta aplicación consiste en la gestión general de un equipo de fútbol en una 
  
     
     - Actualizar la clasificación
-    - 
+    - Notificar convocatoria a usuarios.
 
 # Entidades Principales:
 
