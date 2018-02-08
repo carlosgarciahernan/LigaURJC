@@ -21,6 +21,7 @@ public class ControladorBaseDeDatos{
 	@RequestMapping("url_accionar_listado_clubs")
 	public String listar_clubs(Model modelo,String nombre_club,boolean asc,boolean detallado) {
 		List<Club> lista = new ArrayList<Club>();
+		List<String> lista_jugadores = new ArrayList<String>();
 		if(asc) {
 			lista = repositorio_de_clubs.findByNombreOrderByNombreAsc(nombre_club);
 		}else {
@@ -29,8 +30,6 @@ public class ControladorBaseDeDatos{
 		if(nombre_club.equals(""))
 			lista = repositorio_de_clubs.findAll();
 		modelo.addAttribute("lista",lista);
-		modelo.addAttribute("nombre",nombre_club);
-		modelo.addAttribute("orden",asc);
 		return "listado_clubs";
 	}
 	
@@ -50,7 +49,8 @@ public class ControladorBaseDeDatos{
 			List<Jugador> li = club_repetido.getJugadores();
 			li.add(repositorio_de_jugadores.getOne(id));			
 		}else {
-			repositorio_de_clubs.save(new Club(nombre_club));
+			Club c = new Club(nombre_club);
+			repositorio_de_clubs.save(c);
 		}
 		return "edicion_clubs";
 	}

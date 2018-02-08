@@ -23,7 +23,7 @@ public class Jugador {
 	private int edad;
 	private String provincia;
 	private String ciudad;
-	@ManyToOne
+	@OneToOne
     private Club clubActual;
 	
 	public Jugador() {

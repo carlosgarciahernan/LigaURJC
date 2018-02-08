@@ -18,9 +18,23 @@ public class Club {
 	//private Entrenador entrenador;
 	private String nombre;
 	
-	@OneToMany(mappedBy="clubActual")
+	@OneToMany
 	private List<Jugador> jugadores;
 	
+	private String jugadores_escrito;
+	
+	public String getJugadores_escrito() {
+		String resultado="";
+		for(Jugador j: jugadores) {
+			resultado+=j.getNombre()+" "+j.getPrimerApellido()+" "+j.getSegundoApellido()+", ";
+		}
+		return resultado;
+	}
+
+	public void setJugadores_escrito(String jugadores_escrito) {
+		this.jugadores_escrito = jugadores_escrito;
+	}
+
 	//private Presidente presidente;
 	private String abreviatura;
 	//private List<Liga> participa_liga;
@@ -66,6 +80,5 @@ public class Club {
 	public Club(String nombre) {
 		this.nombre=nombre;
 		jugadores = new ArrayList<Jugador>();
-		jugadores.add(new Jugador("carlos", nombre, nombre, nombre, 0, nombre, nombre, null, null));
 	}
 }
