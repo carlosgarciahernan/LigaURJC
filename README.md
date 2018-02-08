@@ -11,7 +11,7 @@ Esta aplicación consiste en la gestión general de un equipo de fútbol en una 
   -	Mostrar características de ligas y torneos (nº de equipos, descensos y ascensos, sorteos de emparejamientos, reglas).
   -	Consultar Encuentros y clasificación de una liga o torneo.
   -	Se podrá consultar los equipos de una liga, así como la información en un equipo en concreto.
-  -	Detalles de un club (Nombre del club, fecha de creación, nº de jugadores, palmares del club).
+  -	Detalles de un club (Nombre del club, fecha de creación, nº de jugadores).
   -	Datos de los jugadores de un equipo (Nombre, Edad, Altura, Peso, Dorsal, Goles, Partidos jugados, Sanciones)
 
 **Parte Privada:**
